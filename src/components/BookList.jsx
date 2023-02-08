@@ -1,8 +1,7 @@
-import fantasy from "../data/fantasy.json";
 import SingleBook from "./SingleBook";
 
-const BookList = () => {
-  fantasy.map((book) => SingleBook());
+const BookList = (book) => {
+  return book.book.map((book) => <SingleBook book={book} />);
 };
 
 export default BookList;

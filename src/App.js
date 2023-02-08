@@ -7,6 +7,7 @@ import Welcome from "./components/Jumbotron";
 import SingleBook from "./components/SingleBook.jsx";
 import BookList from "./components/BookList";
 import book from "./components/SingleBook";
+import fantasy from "./data/horror.json";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         title="The Last Wish: Introducing the Witcher"
         copertina="https://images-na.ssl-images-amazon.com/images/I/51eHtkVLL5L.jpg"
       ></SingleBook>
-      <BookList></BookList>
+      <BookList book={fantasy}></BookList>
       <MyFooter
         href="#"
         title="Made with love by Palma"
