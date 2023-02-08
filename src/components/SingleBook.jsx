@@ -1,18 +1,14 @@
-import Card from "react-bootstrap/Card";
+import { Card, Button } from "react-bootstrap";
 
-/* book = {
-  asin: "0316438960",
-  title: "The Last Wish: Introducing the Witcher",
-  img: "https://images-na.ssl-images-amazon.com/images/I/51eHtkVLL5L.jpg",
-  price: 9.59,
-  category: "fantasy",
-}; */
-const SingleBook = ({ title, copertina }) => {
+const SingleBook = (prop) => {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={copertina} />
+      <Card.Img variant="top" src={prop.img} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title>{prop.title}</Card.Title>
+      </Card.Body>
+      <Card.Body>
+        <Button variant="primary">Buy</Button>
       </Card.Body>
     </Card>
   );

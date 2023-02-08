@@ -1,7 +1,7 @@
 import SingleBook from "./SingleBook";
 
-const BookList = (book) => {
-  return book.book.map((book) => <SingleBook book={book} />);
+const BookList = (props) => {
+  return props.book.map((book) => <SingleBook {...book} />);
 };
 
 export default BookList;
