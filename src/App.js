@@ -3,14 +3,19 @@ import "./App.css";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/Footer";
 import Welcome from "./components/Jumbotron";
-import AllTheBooks from "./components/AllTheBooks";
+/* import AllTheBooks from "./components/AllTheBooks"; */
+import SingleBook from "./components/SingleBook.jsx";
 
 function App() {
   return (
     <div className="App">
       <MyNav></MyNav>
       <Welcome size="2" bg="blue" color="white"></Welcome>
-      <AllTheBooks></AllTheBooks>
+      {/* <AllTheBooks></AllTheBooks> */}
+      <SingleBook
+        title="Porco Due"
+        copertina="https://images-na.ssl-images-amazon.com/images/I/91xI4GjM7jL.jpg"
+      ></SingleBook>
       <MyFooter
         href="#"
         title="Made with love by Palma"

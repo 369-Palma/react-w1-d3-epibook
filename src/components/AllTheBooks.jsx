@@ -1,4 +1,4 @@
-import { Card, Button, Container, Row } from "react-bootstrap";
+/* import { Card, Button, Container, Row } from "react-bootstrap";
 import fantasy from "../data/fantasy.json";
 
 const AllTheBooks = () => (
@@ -18,4 +18,4 @@ const AllTheBooks = () => (
     </Row>
   </Container>
 );
-export default AllTheBooks;
+export default AllTheBooks; */
