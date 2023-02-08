@@ -5,6 +5,7 @@ import MyFooter from "./components/Footer";
 import Welcome from "./components/Jumbotron";
 /* import AllTheBooks from "./components/AllTheBooks"; */
 import SingleBook from "./components/SingleBook.jsx";
+import BookList from "./components/BookList";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Welcome size="2" bg="blue" color="white"></Welcome>
       {/* <AllTheBooks></AllTheBooks> */}
       <SingleBook
-        title="Porco Due"
-        copertina="https://images-na.ssl-images-amazon.com/images/I/91xI4GjM7jL.jpg"
+        title="The Last Wish: Introducing the Witcher"
+        copertina="https://images-na.ssl-images-amazon.com/images/I/51eHtkVLL5L.jpg"
       ></SingleBook>
+      <BookList></BookList>
       <MyFooter
         href="#"
         title="Made with love by Palma"
