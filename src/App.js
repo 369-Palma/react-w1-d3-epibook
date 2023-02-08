@@ -6,6 +6,7 @@ import Welcome from "./components/Jumbotron";
 /* import AllTheBooks from "./components/AllTheBooks"; */
 import SingleBook from "./components/SingleBook.jsx";
 import BookList from "./components/BookList";
+import book from "./components/SingleBook";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Welcome size="2" bg="blue" color="white"></Welcome>
       {/* <AllTheBooks></AllTheBooks> */}
       <SingleBook
+        book={book}
         title="The Last Wish: Introducing the Witcher"
         copertina="https://images-na.ssl-images-amazon.com/images/I/51eHtkVLL5L.jpg"
       ></SingleBook>
