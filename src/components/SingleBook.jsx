@@ -1,5 +1,5 @@
 import { Card, Button } from "react-bootstrap";
-/* import CommentArea from "./CoomentArea"; */
+import CommentArea from "./CommentArea";
 import { Component } from "react";
 
 class SingleBook extends Component {
@@ -13,7 +13,7 @@ class SingleBook extends Component {
         <Card
           style={{
             width: "18rem",
-            border: this.state.selected ? "1px solid green" : "",
+            border: this.state.selected ? "2px solid green" : "",
           }}
         >
           <Card.Img
@@ -32,6 +32,7 @@ class SingleBook extends Component {
             <Button variant="primary">Buy</Button>
           </Card.Body>
         </Card>
+        <CommentArea key={this.props.asin} book={this.props.book.asin} />
       </>
     );
   }
@@ -49,6 +50,6 @@ class SingleBook extends Component {
         </Card.Body>
       </Card>
   );
-}; */
+};  */
 
 export default SingleBook;
